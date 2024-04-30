@@ -22,3 +22,4 @@ app.UseHttpsRedirection();
 app.MapControllers();
 
 app.Run();
+// "Server=db-mssql;DataBase=2019SBD;Integrated Security=True;TrustServerCertificate=True"

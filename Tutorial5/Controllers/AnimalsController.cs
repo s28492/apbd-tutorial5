@@ -21,7 +21,7 @@ public class AnimalsController : ControllerBase
     public IActionResult GetAnimals(string orderBy = "name")
     {
         // Otwieramy połączenie
-        using SqlConnection connection = new SqlConnection(_configuration.GetConnectionString("Default"));
+        using SqlConnection connection = new SqlConnection(_configuration.GetConnectionString("DefaultConnection"));
         connection.Open();
         string controlOrderBy = "name";
         // Defincja command
